@@ -1,6 +1,5 @@
+!pip install opencv-python
 import cv2
-
-
 def faceDetector(img):
     faceModel = cv2.CascadeClassifier("opencv_tut/resources/face.xml")
     faces = faceModel.detectMultiScale(img, 1.2, 7)
